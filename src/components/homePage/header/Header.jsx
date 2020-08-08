@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, useContext } from "react";
 
 import logoREX from "./img/logoREX.svg";
 import planetEarth from "./img/planetEarth.svg";
@@ -42,7 +42,7 @@ const Header = ({ onClickLeanguage, lang, cart, setCart }) => {
             <img src={logoREX} className={styles.logoREX} alt="" />
           </div>
           <div className={styles.containerLenguage}>
-            <img src={planetEarth} className alt="" />
+            <img src={planetEarth} alt="" />
             <div className={styles.language} onClick={onClickLeanguage}>
               {lang}
             </div>

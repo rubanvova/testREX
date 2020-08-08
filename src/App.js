@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { useState } from "react";
 
 import Header from "./components/homePage/header/Header";
 import Content from "./components/homePage/content/Content";

@@ -171,8 +171,8 @@ const data = [
 const Product = ({ addToCart }) => {
   const strings = useContext(LanguageContext);
 
-  const list = data.map((item) => (
-    <div className={styles.wrapper}>
+  const list = data.map((item, index) => (
+    <div key={index} className={styles.wrapper}>
       <div className={styles.box} key={item.id}>
         <div className={styles.wrapperName}>{item.name}</div>
         <div className={styles.img}>

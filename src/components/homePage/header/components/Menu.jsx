@@ -21,8 +21,8 @@ const Menu = ({ onClickMenu }) => {
       <div className={styles.hamburgerClose} onClick={onClickMenu}>
         <img src={hamburgerClose} alt="" />
       </div>
-      {(menuItems || []).map((item) => (
-        <div className={styles.containerItemsMenu}>
+      {(menuItems || []).map((item, index) => (
+        <div key={index} className={styles.containerItemsMenu}>
           <div className={styles.itemsMenu}>{item.name}</div>
           <Divider horizontal padding="0px 38px 38px 0px" />
         </div>

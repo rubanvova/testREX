@@ -1,4 +1,4 @@
-import React, { useContext, UseState, useState } from "react";
+import React, { useContext } from "react";
 
 import ButtonBox from "../../../content/components/ButtonBox";
 import LanguageContext from "../../../../../languageContext";
@@ -12,14 +12,14 @@ import styles from "./PopapCart.module.css";
 const PopapCart = ({ onClickCart, cart, numderitemsInCart, setCart }) => {
   const strings = useContext(LanguageContext);
 
-  const sum = cart.map((item) => item.price).reduce((a, b) => a + b, 0);
-  console.log(sum);
+  const sums = cart.map((item) => item.price).reduce((a, b) => a + b, 0);
+
   const deleteProductItems = () => {
     setCart([]);
   };
 
-  const listCart = cart.map((item) => (
-    <div className={styles.wrapperItem}>
+  const listCart = cart.map((item, index) => (
+    <div key={index} className={styles.wrapperItem}>
       <div className={styles.boximg}>{item.tmg}</div>
       <div className={styles.nameitem}>{item.name}</div>
       <div className={styles.priceitem}>${item.price}</div>
@@ -62,7 +62,7 @@ const PopapCart = ({ onClickCart, cart, numderitemsInCart, setCart }) => {
 
             <div className={styles.sum}>
               <img src={sum} alt="" />
-              <div className={styles.sumText}>${sum}</div>
+              <div className={styles.sumText}>${sums}</div>
             </div>
           </div>
         </div>
