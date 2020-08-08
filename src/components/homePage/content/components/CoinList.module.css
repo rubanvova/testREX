@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.boxtwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

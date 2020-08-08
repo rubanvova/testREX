@@ -1,0 +1,107 @@
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.popapBox {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  width: 412px;
+  min-height: 200px;
+  background-color: #17182e;
+  opacity: 0.98;
+  z-index: 1;
+}
+
+.popapHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  padding: 0px 15px 0 15px;
+  border-bottom: 2px solid #c4c4c444;
+}
+
+.headText {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.popapFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  border-top: 2px solid #c4c4c444;
+  padding: 0px 15px 0 15px;
+}
+
+.sum {
+  display: flex;
+}
+
+.sumText {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.button {
+  display: flex;
+}
+
+.button div {
+  margin-right: 10px;
+}
+
+.popapContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wrapperItem {
+  width: 380px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #c4c4c444;
+}
+
+.boximg {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../../img/kub.svg), url(../../img/kub.svg),
+    url(../../img/kub.svg), url(../../img/kub.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  height: 63px;
+  width: 63px;
+}
+
+.nameitem {
+  color: #ffffff;
+}
+
+.priceitem {
+  color: #ffffff;
+}

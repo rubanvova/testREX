@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxtwo {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,13 @@
+@import "./fonts/Exo/exo.css";
+
+.App {
+  background-color: #0b0c23;
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 1379.59px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0px 20px 0px 20px;
+}

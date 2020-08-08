@@ -1,0 +1,110 @@
+@import "../../../fonts/OpenSans/opensans.css";
+@import "../../../fonts/Exo/exo.css";
+
+.wrapperContent {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 110px auto 98px auto;
+}
+
+.wrapperFilters {
+  width: 212px;
+  height: 650px;
+  margin-right: 10px;
+}
+
+.wrapperOnSale {
+  width: 500px;
+  margin-right: 15px;
+}
+
+.wrapperProducts {
+  width: 500px;
+  padding-left: 7px;
+}
+
+.wrapperHead {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+}
+
+.wrapperviev {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #ffffff;
+}
+.viev {
+  padding-right: 15px;
+}
+
+.imgCombined {
+  padding-right: 15px;
+}
+
+.wpapperNewListings {
+  width: 260px;
+  height: 760px;
+  margin-right: 27px;
+}
+.text {
+  margin-left: 28px;
+}
+
+.wrapperNews {
+  width: 211px;
+  height: 764px;
+}
+
+.wrapperPordlist {
+}
+
+@media (max-width: 1258px) {
+  .wrapperNews {
+    display: none;
+  }
+  .wpapperNewListings {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1031px) {
+  .wrapperOnSale {
+    width: 250px;
+  }
+  .wrapperProducts {
+    width: 250px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapperOnSale {
+    width: 100%;
+  }
+  .wrapperFilters {
+    display: none;
+  }
+  .wpapperNewListings {
+    display: none;
+  }
+  .wrapperHead {
+    display: none;
+  }
+  .wrapperProducts {
+    width: 100%;
+  }
+  .wrapperContent {
+    margin: 60px auto 0 auto;
+  }
+}
+
+@media (max-width: 571px) {
+}

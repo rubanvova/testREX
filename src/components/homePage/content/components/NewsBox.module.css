@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 212px;
+  height: 704px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url(../img/kub.svg), url(../img/kub.svg),
+    url(../img/kub.svg), url(../img/kub.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+}

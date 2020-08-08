@@ -1,0 +1,19 @@
+.wrapperCarouselMenu {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  padding: 83px 0px 0px 0px;
+}
+
+.itemMenu {
+  text-align: center;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #a59f9f;
+}
+
+.itemMenu {
+  color: #ffffff;
+}

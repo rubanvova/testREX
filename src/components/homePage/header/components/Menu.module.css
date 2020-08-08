@@ -1,0 +1,37 @@
+.wrraperMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #0b0c23;
+  max-height: calc(100%-104px);
+  width: 100%;
+  padding-top: 104px;
+  padding-bottom: 130px;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.hamburgerClose {
+  padding-bottom: 108.86px;
+}
+
+.containerItemsMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemsMenu {
+  height: 80px;
+}
+
+.containerItemsMenu:last-child img {
+  visibility: hidden;
+}

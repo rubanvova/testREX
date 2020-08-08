@@ -1,0 +1,156 @@
+@import "../../../fonts/Exo/exo.css";
+
+.wrapperHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: relative;
+}
+
+.containerControls {
+  height: 20px;
+  display: none;
+  padding-bottom: 6px;
+}
+
+.containerLogo {
+  padding-right: 26.95px;
+}
+
+.logoREX {
+  width: 74.64px;
+  height: 21.02px;
+}
+
+.containerLenguage {
+  display: flex;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Exo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-top: 3px;
+  padding-left: 8px;
+}
+
+.containerMenu {
+  width: 23.02px;
+  height: 23.02px;
+}
+
+.containerMyAccount {
+  display: flex;
+}
+
+.imgUser {
+  height: 20px;
+  width: 20px;
+  padding-right: 8px;
+}
+
+.MyAccount {
+  font-family: Exo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.imgArrow {
+  height: 13px;
+  width: 9px;
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+.containerBalance {
+  display: flex;
+  height: 18.32px;
+  width: 20.21px;
+}
+
+.containerNotification {
+  display: flex;
+  height: 19.99px;
+  width: 17.57px;
+}
+
+.containerCart {
+  display: flex;
+}
+
+.cart {
+  height: 20px;
+  width: 22px;
+}
+
+.textCart {
+  font-family: Exo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  padding-top: 3px;
+  padding-right: 12px;
+}
+
+.carouselMenu {
+  display: none;
+}
+
+.boxOne {
+  display: flex;
+}
+
+.boxTwo {
+  padding-left: 150px;
+}
+
+.boxThree {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .containerLenguage {
+    display: none;
+  }
+  .containerMyAccount {
+    display: none;
+  }
+  .containerBalance {
+    display: none;
+  }
+  .containerNotification {
+    display: none;
+  }
+  .textCart {
+    display: none;
+  }
+  .boxTwo {
+    display: none;
+  }
+  .containerCart:first-child div {
+    display: none;
+  }
+  .divider {
+    display: none;
+  }
+  .containerLogo {
+    padding: 0px;
+  }
+  .containerControls {
+    display: block;
+  }
+  .carouselMenu {
+    display: block;
+  }
+}
