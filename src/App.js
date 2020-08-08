@@ -12,15 +12,20 @@ function App() {
   const [lang, setLang] = useState("ENG");
   const onClickLeanguage = () => {
     if (LANGUAGES.ENG === language) {
-      return setLanguage(LANGUAGES.RUS), setLang("RUS");
+      setLanguage(LANGUAGES.RUS);
+      setLang("RUS");
     } else if (LANGUAGES.RUS === language) {
-      return setLanguage(LANGUAGES.UKR), setLang("UKR");
+      setLanguage(LANGUAGES.UKR);
+      setLang("UKR");
     } else if (LANGUAGES.UKR === language) {
-      return setLanguage(LANGUAGES.BEL), setLang("BEL");
+      setLanguage(LANGUAGES.BEL);
+      setLang("BEL");
     } else if (LANGUAGES.BEL === language) {
-      return setLanguage(LANGUAGES.PL), setLang("PL");
+      setLanguage(LANGUAGES.PL);
+      setLang("PL");
     } else if (LANGUAGES.PL === language) {
-      return setLanguage(LANGUAGES.ENG), setLang("ENG");
+      setLanguage(LANGUAGES.ENG);
+      setLang("ENG");
     }
   };
   return (
