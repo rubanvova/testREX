@@ -63,9 +63,6 @@
   height: 764px;
 }
 
-.wrapperPordlist {
-}
-
 @media (max-width: 1258px) {
   .wrapperNews {
     display: none;
@@ -102,7 +99,16 @@
     width: 100%;
   }
   .wrapperContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 60px auto 0 auto;
+  }
+  .wrapperNews {
+    margin: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 

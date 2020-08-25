@@ -18,7 +18,14 @@ import LanguageContext from "../../../languageContext";
 
 import styles from "./Header.module.css";
 
-const Header = ({ onClickLeanguage, lang, cart, setCart }) => {
+const Header = ({
+  onClickLeanguage,
+  lang,
+  cart,
+  setCart,
+  setCounterItem,
+  counterItem,
+}) => {
   const strings = useContext(LanguageContext);
   const [showMemu, setshowMemu] = useState(false);
   const [showCart, setshowCart] = useState(false);
@@ -92,6 +99,8 @@ const Header = ({ onClickLeanguage, lang, cart, setCart }) => {
               cart={cart}
               setCart={setCart}
               numderitemsInCart={numderitemsInCart}
+              setCounterItem={setCounterItem}
+              counterItem={counterItem}
             />
           )}
         </div>

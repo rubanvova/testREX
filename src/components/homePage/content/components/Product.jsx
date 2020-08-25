@@ -171,7 +171,7 @@ const data = [
 const Product = ({ addToCart }) => {
   const strings = useContext(LanguageContext);
 
-  const list = data.map((item, index) => (
+  const list = (data || []).map((item, index) => (
     <div key={index} className={styles.wrapper}>
       <div className={styles.box} key={item.id}>
         <div className={styles.wrapperName}>{item.name}</div>
@@ -188,7 +188,7 @@ const Product = ({ addToCart }) => {
             <div className={styles.buttonDetails}>
               <div> {strings.DETAILS}</div>
             </div>
-            <div onClick={() => addToCart(item)}>
+            <div onClick={() => addToCart(item, item.id)}>
               <ButtonBox arrowoff sizeWidth="84px" text={strings.ADDCART} />
             </div>
           </div>

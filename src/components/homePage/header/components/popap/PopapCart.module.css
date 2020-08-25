@@ -89,6 +89,9 @@
 }
 
 .boximg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   background-image: url(../../img/kub.svg), url(../../img/kub.svg),
     url(../../img/kub.svg), url(../../img/kub.svg);
@@ -98,7 +101,19 @@
   width: 63px;
 }
 
+.boximg img {
+  display: none;
+}
+
+.boximg:hover img {
+  display: initial;
+}
+
 .nameitem {
+  color: #ffffff;
+}
+
+.counterItem {
   color: #ffffff;
 }
 

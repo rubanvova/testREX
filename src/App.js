@@ -8,8 +8,10 @@ import LanguageContext, { LANGUAGES, STRINGS } from "./languageContext";
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [counterItem, setCounterItem] = useState(1);
   const [language, setLanguage] = useState(LANGUAGES.ENG);
   const [lang, setLang] = useState("ENG");
+
   const onClickLeanguage = () => {
     if (LANGUAGES.ENG === language) {
       setLanguage(LANGUAGES.RUS);
@@ -28,6 +30,7 @@ function App() {
       setLang("ENG");
     }
   };
+
   return (
     <LanguageContext.Provider value={STRINGS[language]}>
       <div className={styles.App}>
@@ -37,8 +40,15 @@ function App() {
             lang={lang}
             cart={cart}
             setCart={setCart}
+            counterItem={counterItem}
+            setCounterItem={setCounterItem}
           />
-          <Content cart={cart} setCart={setCart} />
+          <Content
+            cart={cart}
+            setCart={setCart}
+            counterItem={counterItem}
+            setCounterItem={setCounterItem}
+          />
         </div>
       </div>
     </LanguageContext.Provider>

@@ -10,3 +10,9 @@
   background-repeat: no-repeat;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}

@@ -6,23 +6,76 @@ import LanguageContext from "../../../../../languageContext";
 import PopapHead from "../../img/popapHead.svg";
 import sum from "../../img/sum.svg";
 import hamburgerClose from "../../img/hamburgerClose.svg";
+import deleteItem from "../../img/deleteItem.svg";
+import arrow from "../../img/arrow.svg";
 
 import styles from "./PopapCart.module.css";
 
-const PopapCart = ({ onClickCart, cart, numderitemsInCart, setCart }) => {
+const PopapCart = ({
+  onClickCart,
+  cart,
+  numderitemsInCart,
+  setCart,
+  setCounterItem,
+  counterItem,
+}) => {
   const strings = useContext(LanguageContext);
 
-  const sums = cart.map((item) => item.price).reduce((a, b) => a + b, 0);
+  const sums = (cart || [])
+    .map((item) => item.price * item.counterItem)
+    .reduce((a, b) => a + b, 0);
+
+  const deletePoducts = (id) => {
+    setCart(cart.filter((i) => i.id !== id));
+  };
 
   const deleteProductItems = () => {
     setCart([]);
   };
 
-  const listCart = cart.map((item, index) => (
+  const onClickCounterPlus = (id) => {
+    (cart || []).map((item) => {
+      if (item.id === id) {
+        setCounterItem(++item.counterItem);
+      }
+      return item;
+    });
+  };
+
+  const onClickCounterMinus = (id) => {
+    (cart || []).map((item) => {
+      if (item.id === id) {
+        setCounterItem(--item.counterItem);
+      }
+      return item;
+    });
+  };
+
+  const listCart = (cart || []).map((item, index) => (
     <div key={index} className={styles.wrapperItem}>
-      <div className={styles.boximg}>{item.tmg}</div>
+      <div className={styles.boximg}>
+        {item.img}
+        <img src={deleteItem} alt="" onClick={() => deletePoducts(item.id)} />
+      </div>
       <div className={styles.nameitem}>{item.name}</div>
-      <div className={styles.priceitem}>${item.price}</div>
+      <div>
+        <div className={styles.counterItem}>
+          <img
+            src={arrow}
+            alt=""
+            onClick={() => onClickCounterMinus(item.id)}
+            style={{ transform: "rotate(90deg)", marginRight: "5px" }}
+          />
+          {item.counterItem}
+          <img
+            src={arrow}
+            alt=""
+            onClick={() => onClickCounterPlus(item.id)}
+            style={{ transform: "rotate(270deg)", marginLeft: "5px" }}
+          />
+        </div>
+        <div className={styles.priceitem}>${item.price}</div>
+      </div>
     </div>
   ));
 

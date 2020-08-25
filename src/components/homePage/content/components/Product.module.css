@@ -220,7 +220,7 @@
     height: 200px;
   }
   .imgProd {
-    height: 300px;
+    width: calc(50vh - 100px);
   }
   .wrapperPrice {
     padding-top: 140px;
@@ -262,7 +262,7 @@
     padding-top: 40px;
   }
   .imgProd {
-    height: 200px;
+    width: calc(40vh - 100px);
   }
   .wrapper {
     height: 500px;
@@ -296,7 +296,7 @@
     padding-top: 0px;
   }
   .imgProd {
-    height: 150px;
+    width: calc(10vh + 100px);
   }
   .wrapperPrice {
     padding-top: 10px;

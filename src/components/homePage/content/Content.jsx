@@ -13,13 +13,23 @@ import combined from "./img/combined.svg";
 
 import styles from "./Content.module.css";
 
-const Content = ({ cart, setCart }) => {
+const Content = ({ cart, setCart, setCounterItem, counterItem }) => {
   const strings = useContext(LanguageContext);
   const [showCoinList, setShowCoinList] = useState(false);
   const [showManufacturer, setShowManufacturer] = useState(false);
 
-  const addToCart = (data) => {
-    setCart([{ ...data }, ...cart]);
+  const addToCart = (data, id) => {
+    if (data) {
+      setCounterItem((counterItem = 1));
+      setCart([{ ...data, counterItem }, ...cart]);
+    }
+    (cart || []).map((item) => {
+      if (item.id === id) {
+        setCart([...cart]);
+        setCounterItem(item.counterItem++);
+      }
+      return item;
+    });
   };
   const onClickCoin = () => {
     setShowCoinList(!showCoinList);
