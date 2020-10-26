@@ -6,7 +6,7 @@
   top: 0px;
   left: 0px;
   background-color: #0b0c23;
-  max-height: calc(100%-104px);
+  /* max-height: calc(100%-104px); */
   width: 100%;
   padding-top: 104px;
   padding-bottom: 130px;
