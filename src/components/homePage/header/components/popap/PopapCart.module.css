@@ -40,6 +40,9 @@
   line-height: 48px;
   color: #ffffff;
 }
+.closePopap {
+  cursor: pointer;
+}
 
 .popapFooter {
   display: flex;

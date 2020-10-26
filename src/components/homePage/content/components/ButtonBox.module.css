@@ -10,6 +10,7 @@
     url(../img/kub.svg), url(../img/kub.svg);
   background-repeat: no-repeat;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  cursor: pointer;
 }
 
 .wrapperActive {

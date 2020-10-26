@@ -169,6 +169,7 @@
   width: 87px;
   height: 30px;
   background-color: #1b1b67;
+  cursor: pointer;
 }
 
 @media (max-width: 1031px) {

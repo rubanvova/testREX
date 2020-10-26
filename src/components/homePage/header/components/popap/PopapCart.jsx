@@ -55,7 +55,7 @@ const PopapCart = ({
     <div key={index} className={styles.wrapperItem}>
       <div className={styles.boximg}>
         {item.img}
-        <img src={deleteItem} alt="" onClick={() => deletePoducts(item.id)} />
+        <img src={deleteItem} alt="" onClick={() => deletePoducts(item.id)} style={{cursor: "pointer"}} />
       </div>
       <div className={styles.nameitem}>{item.name}</div>
       <div>
@@ -64,14 +64,14 @@ const PopapCart = ({
             src={arrow}
             alt=""
             onClick={() => onClickCounterMinus(item.id)}
-            style={{ transform: "rotate(90deg)", marginRight: "5px" }}
+            style={{ transform: "rotate(90deg)", marginRight: "5px",  cursor: "pointer"  }}
           />
           {item.counterItem}
           <img
             src={arrow}
             alt=""
             onClick={() => onClickCounterPlus(item.id)}
-            style={{ transform: "rotate(270deg)", marginLeft: "5px" }}
+            style={{ transform: "rotate(270deg)", marginLeft: "5px", cursor: "pointer" }}
           />
         </div>
         <div className={styles.priceitem}>${item.price}</div>
@@ -90,7 +90,7 @@ const PopapCart = ({
               {numderitemsInCart}
               {strings.AFTER}
             </div>
-            <img src={hamburgerClose} alt="" onClick={onClickCart} />
+            <img src={hamburgerClose} className={styles.closePopap} alt="" onClick={onClickCart} />
           </div>
           <div className={styles.popapContent}>{listCart}</div>
           <div className={styles.popapFooter}>
