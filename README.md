@@ -1,4 +1,4 @@
-Demo : https://app.netlify.com/sites/flamboyant-carson-a0b54e/overview
+Demo : https://flamboyant-carson-a0b54e.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
